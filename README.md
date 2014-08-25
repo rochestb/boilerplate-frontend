@@ -10,7 +10,7 @@ Project Name
 
 ## Quick Start
 
-* run `npm install && grunt build`
+* run `npm install && bower install && grunt build`
 * run `grunt watch` while developing
 
 
@@ -25,7 +25,7 @@ A few quick reminders as you are developing.
 
 ### Modernizr
 
-Boilerplate has a custom build of [Modernizr](http://modernizr.com/download/#-shiv-cssclasses) that includes the HTML5 shiv and CSS classes. Please update the file as tests are needed instead of loading the whole development version.
+Boilerplate has a custom builder of Modernizr that will allow you to add your own tests. Please update `build/config/modernizr.js` with tests that are needed instead of loading the whole development version.  See [https://github.com/Modernizr/grunt-modernizr](https://github.com/Modernizr/grunt-modernizr) for more settings.
 
 This approach will limit the Modernizr tests to only those needed for the project. As a benefit we prevent running every Modernizr test on every page load of the site.
 
