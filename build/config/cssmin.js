@@ -2,6 +2,7 @@
  * build.config.cssmin
  */
 module.exports = function(grunt) {
+  'use strict';
 
   var config = grunt.config.get('config');
 
@@ -18,9 +19,9 @@ module.exports = function(grunt) {
 
     css: {
       expand: true,
-      cwd: config.css +'/concat/',
+      cwd: config.css + '/concat/',
       src: ['**/*.css'],
-      dest: config.cssmin +'/',
+      dest: config.cssmin + '/',
       ext: '.min.css'
     }
 

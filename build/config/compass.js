@@ -2,6 +2,7 @@
  * build.config.compass
  */
 module.exports = function(grunt) {
+  'use strict';
 
   var config = grunt.config.get('config');
 
@@ -14,7 +15,7 @@ module.exports = function(grunt) {
     all: {
       options: {
         relativeAssets: true,
-        sassDir: config.css +'/app',
+        sassDir: config.css + '/app',
         cssDir: config.cssgen
       }
     }

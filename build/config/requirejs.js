@@ -2,6 +2,7 @@
  * build.config.requirejs
  */
 module.exports = function(grunt) {
+  'use strict';
 
   var config = grunt.config.get('config');
 
@@ -15,12 +16,12 @@ module.exports = function(grunt) {
       options: {
         name: 'apps/master/app',
         findNestedDependencies: true,
-        baseUrl: config.js +'/',
-        mainConfigFile: config.js +'/main.js',
+        baseUrl: config.js + '/',
+        mainConfigFile: config.js + '/main.js',
         out: config.jsmin + '/app.min.js',
         paths: {
-          'settings':'empty:',
-          'master':  'empty:'
+          'settings': 'empty:',
+          'master': 'empty:'
         }
       }
     }

@@ -2,6 +2,7 @@
  * build.config.clean
  */
 module.exports = function(grunt) {
+  'use strict';
 
   var config = grunt.config.get('config');
 
@@ -12,11 +13,11 @@ module.exports = function(grunt) {
   return {
 
     generated: {
-      src: [config.cssmin, config.cssgen, config.css +'/concat', config.jsmin]
+      src: [config.cssmin, config.cssgen, config.css + '/concat', config.jsmin]
     },
 
     concatcss: {
-      src: [config.css +'/concat']
+      src: [config.css + '/concat']
     }
 
   };

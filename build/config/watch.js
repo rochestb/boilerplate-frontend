@@ -2,6 +2,7 @@
  * build.config.watch
  */
 module.exports = function(grunt) {
+  'use strict';
 
   var config = grunt.config.get('config');
 
@@ -18,14 +19,14 @@ module.exports = function(grunt) {
         'build/config/**/*.js',
 
         // JS
-        config.js +'/**/*.js',
-        '!'+ config.js +'/**/*min.js',
+        config.js + '/**/*.js',
+        '!' + config.js + '/**/*min.js',
 
         // CSS
-        config.css +'/app/**/*.scss',
+        config.css + '/app/**/*.scss',
 
         // Images
-        config.images +'/**/*.{png,jpg,gif}'
+        config.images + '/**/*.{png,jpg,gif}'
       ],
 
       tasks: ['default']

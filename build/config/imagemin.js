@@ -2,6 +2,7 @@
  * build.config.imagemin
  */
 module.exports = function(grunt) {
+  'use strict';
 
   var config = grunt.config.get('config');
 

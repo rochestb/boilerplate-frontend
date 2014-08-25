@@ -2,6 +2,7 @@
  * build.config.concat
  */
 module.exports = function(grunt) {
+  'use strict';
 
   var config = grunt.config.get('config');
 
@@ -12,8 +13,8 @@ module.exports = function(grunt) {
   return {
 
     css: {
-      src: [config.cssgen +'/**/*.css'],
-      dest: config.css +'/concat/app.css'
+      src: [config.cssgen + '/**/*.css'],
+      dest: config.css + '/concat/app.css'
     }
 
   };
