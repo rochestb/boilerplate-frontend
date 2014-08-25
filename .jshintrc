@@ -1,0 +1,36 @@
+{
+    "browser": true,
+    "jquery": true,
+    "node": true,
+    "nonstandard": true,
+    "phantom": true,
+    "devel": true,
+    "curly": true,
+    "eqnull": true,
+    "indent": 2,
+    "latedef": true,
+    "newcap": true,
+    "quotmark": true,
+    "trailing": true,
+    "undef": true,
+    "unused": true,
+    "immed": true,
+    "bitwise": true,
+    "noarg": true,
+    "strict": true,
+    "smarttabs": true,
+    "globals": {
+        "define": true,
+        "require": true,
+        "Modernizr": true
+    },
+    "predef":[
+      "Marionette",
+      "Backbone",
+      "_",
+      "TweenLite",
+      "Cubic",
+      "Circ",
+      "amplify"
+    ]
+}
