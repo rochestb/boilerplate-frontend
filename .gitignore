@@ -16,3 +16,6 @@ source/js/min
 # vim temp files
 *.swp
 *.swo
+
+# Bower
+bower_components
