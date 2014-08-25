@@ -11,6 +11,11 @@ module.exports = function(grunt) {
 
   // Config
   return {
+    options:{
+      importPath: [
+       'bower_components'
+      ]
+    },
 
     all: {
       options: {
@@ -19,6 +24,5 @@ module.exports = function(grunt) {
         cssDir: config.cssgen
       }
     }
-
   };
 };
