@@ -2,6 +2,7 @@
  * build.config
  */
 module.exports = function(grunt) {
+  'use strict';
 
   // Define grunt config option
   grunt.config.set('config', require('./Gruntconfig')());
@@ -13,7 +14,6 @@ module.exports = function(grunt) {
 
   // Measures the time each task takes
   require('time-grunt')(grunt);
-
 
   /**
    * Default task
@@ -32,7 +32,6 @@ module.exports = function(grunt) {
     // Images
     'newer:imagemin:images' // minify images
   ]);
-
 
   /**
    * Build task
@@ -54,7 +53,6 @@ module.exports = function(grunt) {
     // Images
     'imagemin:images'  // minify images
   ]);
-
 
   /**
    * Cleanup tasks
