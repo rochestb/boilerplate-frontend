@@ -19,7 +19,8 @@ module.exports = function(grunt) {
       options: {
         ignorePackages: [
           'modernizr',
-          'extra-strength-responsive-grids'
+          'extra-strength-responsive-grids',
+          'normalize.scss'
         ]/*,
 
         NOTE example on how to load package specific files
