@@ -1,3 +1,4 @@
+/*jshint maxstatements:false */
 /**
  * build.config
  */
@@ -57,7 +58,8 @@ module.exports = function(grunt) {
   /**
    * Cleanup tasks
    *
-   * Remove the processed Sass CSS files and require minified js then run the build task
+   * Remove the processed Sass CSS files and require minified js then run the
+   * build task
    */
   grunt.registerTask('cleanup', ['clean:generated', 'build']);
 

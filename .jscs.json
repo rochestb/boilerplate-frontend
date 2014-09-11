@@ -8,12 +8,13 @@
   "disallowImplicitTypeConversion": ["string"],
   "disallowKeywords": ["with", "eval"],
   "disallowMultipleLineBreaks": true,
-  "disallowKeywordsOnNewLine": ["else"],
+  "disallowKeywordsOnNewLine": [],
   "disallowTrailingWhitespace": true,
   "requireLineFeedAtFileEnd": true,
   "validateJSDoc": {
     "checkParamNames": true,
     "requireParamTypes": true
   },
-  "requireSpaceBeforeBlockStatements": true
+  "requireSpaceBeforeBlockStatements": true,
+  "requireKeywordsOnNewLine": ["else"]
 }
