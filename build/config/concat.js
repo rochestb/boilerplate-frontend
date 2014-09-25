@@ -11,11 +11,9 @@ module.exports = function(grunt) {
 
   // Config
   return {
-
     css: {
-      src: [config.cssgen + '/**/*.css'],
-      dest: config.css + '/concat/app.css'
+      src: [ config.cssgen + '/**/*.css'],
+      dest: '.tmp/styles/app.css'
     }
-
   };
 };

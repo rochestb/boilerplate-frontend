@@ -11,18 +11,24 @@ module.exports = function(grunt) {
 
   // Config
   return {
-    options:{
+    options: {
+      relativeAssets: true,
+      sassDir: config.css,
+      cssDir: '.tmp/cssgen',
       importPath: [
-       'bower_components'
-      ]
+        './bower_components',
+        config.css + '/app'
+      ],
+      debugInfo: true
     },
 
-    all: {
-      options: {
-        relativeAssets: true,
-        sassDir: config.css + '/app',
-        cssDir: config.cssgen
-      }
+    server: {
+    },
+
+    dist: {
+     options: {
+       debugInfo: false
+     }
     }
   };
 };

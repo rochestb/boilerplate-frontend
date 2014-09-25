@@ -17,11 +17,11 @@ module.exports = function(grunt) {
       //report: 'gzip' // Optionally report min and gzip'd
     },
 
-    css: {
+    dist: {
       expand: true,
-      cwd: config.css + '/concat/',
+      cwd: '.tmp/styles/',
       src: ['**/*.css'],
-      dest: config.cssmin + '/',
+      dest: './dist/styles/',
       ext: '.min.css'
     }
 

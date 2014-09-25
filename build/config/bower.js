@@ -21,16 +21,35 @@ module.exports = function(grunt) {
           'modernizr',
           'extra-strength-responsive-grids',
           'normalize.scss'
-        ]/*,
+        ],
 
-        NOTE example on how to load package specific files
         packageSpecific: {
          'lodash': {
-           files: [
-            'dist/lodash.js'
-           ]
-         }
-        }*/
+            files: [
+              'dist/lodash.js'
+            ]
+          }
+        }
+      }
+    },
+
+    dist: {
+      dest: config.dist,
+      css_dest: config.distCSS + '/libs',
+      js_dest: config.distJS + '/libs',
+      options: {
+        ignorePackages: [
+          'modernizr',
+          'extra-strength-responsive-grids',
+        ],
+
+        packageSpecific: {
+          'lodash': {
+            files: [
+              'dist/lodash.js'
+            ]
+          }
+        }
       }
     }
   };

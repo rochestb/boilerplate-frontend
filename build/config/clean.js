@@ -12,13 +12,16 @@ module.exports = function(grunt) {
   // Config
   return {
 
-    generated: {
-      src: [config.cssmin, config.cssgen, config.css + '/concat', config.jsmin]
+    dist: {
+      files: [{
+        dot: true,
+        src: [
+          '.tmp',
+          '<%= config.dist %>/*',
+          '!<%= config.dist %>/.git*'
+        ]
+      }]
     },
-
-    concatcss: {
-      src: [config.css + '/concat']
-    }
-
+    dev: '.tmp'
   };
 };

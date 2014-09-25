@@ -1,5 +1,5 @@
 /**
- * build.config.modernizr
+ * build.config.clean
  */
 module.exports = function(grunt) {
   'use strict';
@@ -12,18 +12,34 @@ module.exports = function(grunt) {
   // Config
   return {
     dev: {
-      //'devFile': 'bower_components/modernizr/modernizr.js',
+      'devFile': 'bower_components/modernizr/modernizr.js',
       'outputFile': config.js + '/libs/modernizr.js',
 
       'extra': {
         'shiv' : true,
         'printshiv' : false,
         'load' : true,
-        'mq' : true,
+        'mq' : false,
         'cssclasses' : true
       },
 
       'uglify': false,
+
+      'parseFiles': false
+    },
+    dist: {
+      'devFile': 'bower_components/modernizr/modernizr.js',
+      'outputFile': config.distJS + '/libs/modernizr.js',
+
+      'extra': {
+        'shiv' : true,
+        'printshiv' : false,
+        'load' : true,
+        'mq' : false,
+        'cssclasses' : true
+      },
+
+      'uglify': true,
 
       'parseFiles': false
     }

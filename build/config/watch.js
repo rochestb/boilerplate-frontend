@@ -11,26 +11,30 @@ module.exports = function(grunt) {
 
   // Config
   return {
-
-    all: {
+    options: {
+      livereload: true
+    },
+    js: {
       files: [
-        // Grunt config
         'Gruntfile.js',
+        'Gruntconfig.js',
         'build/config/**/*.js',
-
-        // JS
         config.js + '/**/*.js',
-        '!' + config.js + '/**/*min.js',
-
-        // CSS
-        config.css + '/app/**/*.scss',
-
-        // Images
-        config.images + '/**/*.{png,jpg,gif}'
+        '!' + config.js + '/libs/*.js'
       ],
-
-      tasks: ['default']
+      tasks: [
+        'jshint',
+        'jscs'
+      ]
+    },
+    css: {
+     files: [
+       config.css + '/**/*'
+     ],
+      tasks: [
+        'compass:server',
+        'concat'
+      ]
     }
-
   };
 };

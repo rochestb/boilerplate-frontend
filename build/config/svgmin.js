@@ -1,5 +1,5 @@
 /**
- * build.config.imagemin
+ * build.config.svgmin
  */
 module.exports = function(grunt) {
   'use strict';
@@ -7,23 +7,15 @@ module.exports = function(grunt) {
   var config = grunt.config.get('config');
 
   // Load task
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-svgmin');
 
   // Config
   return {
-
-    images: {
-      expand: true,
-      cwd: config.images,
-      src: ['**/*.{png,jpg,gif}'],
-      dest: config.images
-    },
-
     dist: {
       files: [{
         expand: true,
         cwd: config.images,
-        src: '{,*/}*.{gif,jpeg,jpg,png}',
+        src: '{,*/}*.svg',
         dest: config.dist + '/images'
       }]
     }
