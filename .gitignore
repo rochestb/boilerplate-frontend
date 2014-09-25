@@ -7,11 +7,10 @@ Thumbs.db
 # Sass + Node Modules
 .sass-cache
 node_modules/
+bower_components
 
 # Ignore generated files from Grunt
-source/css/generated
-source/css/min
-source/js/min
+source/js/libs
 
 # vim temp files
 *.swp
