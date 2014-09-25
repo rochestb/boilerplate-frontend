@@ -16,51 +16,35 @@ module.exports = function(grunt) {
   // Measures the time each task takes
   require('time-grunt')(grunt);
 
-  /**
-   * Default task
-   */
-  grunt.registerTask('default', [
-    // CSS
-    'compass:all',      // run compass to process scss
-    'concat:css',       // concatenate processed css
-    'cssmin:css',       // minify concatenated css
-    'clean:concatcss',  // delete the concatenated css directory/file
+  grunt.registerTask('serve', 'start the server and preview your app, --allow-remote for remote access', function (target) {
+    if (grunt.option('allow-remote')) {
+      grunt.config.set('connect.options.hostname', '0.0.0.0');
+    }
+    if (target === 'dist') {
+      return grunt.task.run(['build', 'connect:dist:keepalive']);
+    }
 
-    // JS
-    'newer:jshint:all', // run jshint to lint js
-    'requirejs:build',  // run require to build and minify js
+    grunt.task.run([
+      'clean:dev',
+      'bower:dev',
+      'concurrent:dev',
+      'concat',
+      'connect:dev',
+      'watch',
+      'modernizr:dev'
+    ]);
+  });
 
-    // Images
-    'newer:imagemin:images' // minify images
+  grunt.registerTask('dist', 'build all static files', [
+    'clean:dist',
+    'bower:dist',
+    'compass:dist',
+    'concat',
+    'imagemin:dist',
+    'svgmin:dist',
+    'cssmin:dist',
+    'htmlmin:dist',
+    'copy:dist',
+    'modernizr:dist'
   ]);
-
-  /**
-   * Build task
-   *
-   * A full Grunt build of the project.
-   * Same task as default without the 'newer' prefix so all files are processed
-   */
-  grunt.registerTask('build', [
-    // CSS
-    'compass:all',     // run compass to process scss
-    'concat:css',      // concatenate processed css
-    'cssmin:css',      // minify concatenated css
-    'clean:concatcss', // delete the concatenated css directory/file
-
-    // JS
-    'jshint:all',      // run jshint to lint js
-    'requirejs:build', // run require to build and minify js
-
-    // Images
-    'imagemin:images'  // minify images
-  ]);
-
-  /**
-   * Cleanup tasks
-   *
-   * Remove the processed Sass CSS files and require minified js then run the
-   * build task
-   */
-  grunt.registerTask('cleanup', ['clean:generated', 'build']);
-
 };
