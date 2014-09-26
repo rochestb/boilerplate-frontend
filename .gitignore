@@ -18,3 +18,5 @@ source/js/libs
 
 # Bower
 bower_components
+
+.tmp
