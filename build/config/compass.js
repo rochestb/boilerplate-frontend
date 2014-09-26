@@ -22,12 +22,13 @@ module.exports = function(grunt) {
       debugInfo: true
     },
 
-    server: {
-    },
+    dev: {},
 
     dist: {
      options: {
-       debugInfo: false
+       debugInfo: false,
+       outputStyle: 'compressed',
+       force: true
      }
     }
   };
