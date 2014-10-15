@@ -12,7 +12,7 @@ module.exports = function(grunt) {
   // Config
   return {
 
-    images: {
+    dev: {
       expand: true,
       cwd: config.images,
       src: ['**/*.{png,jpg,gif}'],
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: config.images,
         src: '{,*/}*.{gif,jpeg,jpg,png}',
-        dest: config.dist + '/images'
+        dest: config.distImages
       }]
     }
   };
