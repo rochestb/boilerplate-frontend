@@ -15,33 +15,30 @@ module.exports = function(grunt) {
       'devFile': 'bower_components/modernizr/modernizr.js',
       'outputFile': config.js + '/libs/modernizr.js',
 
-      'extra': {
-        'shiv' : true,
-        'printshiv' : false,
-        'load' : true,
-        'mq' : false,
-        'cssclasses' : true
-      },
+      'extra': config.modernizr.extra,
+
+      'extensibility': config.modernizr.extensibility,
 
       'uglify': false,
 
-      'parseFiles': false
+      'parseFiles': false,
+
+      'tests': config.modernizr.tests
     },
+
     dist: {
       'devFile': 'bower_components/modernizr/modernizr.js',
       'outputFile': config.distJS + '/libs/modernizr.js',
 
-      'extra': {
-        'shiv' : true,
-        'printshiv' : false,
-        'load' : true,
-        'mq' : false,
-        'cssclasses' : true
-      },
+      'extra': config.modernizr.extra,
+
+      'extensibility': config.modernizr.extensibility,
 
       'uglify': true,
 
-      'parseFiles': false
+      'parseFiles': false,
+
+      'tests': config.modernizr.tests
     }
   };
 };
