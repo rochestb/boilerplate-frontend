@@ -30,6 +30,7 @@
     "time-grunt": "^0.3.2"
   },
   "devDependencies": {
+    "grunt-bowercopy": "^1.1.0",
     "grunt-stripmq": "0.0.6"
   }
 }
