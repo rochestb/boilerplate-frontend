@@ -19,6 +19,31 @@ module.exports = function() {
   config.dist = 'dist';
   config.distCSS = config.dist + '/styles';
   config.distJS = config.dist + '/js';
+  config.distImages = config.dist + '/images';
+
+  config.modernizr = {
+    // https://github.com/Modernizr/modernizr.com/blob/gh-pages/i/js/modulizr.js#L15-157
+    tests: [],
+
+    extra: {
+      'shiv' : true,
+      'printshiv' : false,
+      'load' : true,
+      'mq' : false,
+      'cssclasses' : true
+    },
+
+    extensibility : {
+      'addtest' : false,
+      'prefixed' : false,
+      'teststyles' : false,
+      'testprops' : false,
+      'testallprops' : false,
+      'hasevents' : false,
+      'prefixes' : false,
+      'domprefixes' : false
+    }
+  };
 
   return config;
 };
