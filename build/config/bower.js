@@ -9,6 +9,8 @@ module.exports = function(grunt) {
   // Load task
   grunt.loadNpmTasks('grunt-bower');
 
+  // ignore camelcase error
+  /*jshint camelcase: false */
   // Config
   return {
 
@@ -17,6 +19,7 @@ module.exports = function(grunt) {
       css_dest: config.css + '/libs',
       js_dest: config.js + '/libs',
       options: {
+        expand: true,
         ignorePackages: [
           'modernizr',
           'extra-strength-responsive-grids',
@@ -24,7 +27,10 @@ module.exports = function(grunt) {
         ],
 
         packageSpecific: {
-         'lodash': {
+          'jquery': {
+            keepExpandedHierarchy: false
+          },
+          'lodash': {
             files: [
               'dist/lodash.js'
             ]
@@ -38,12 +44,17 @@ module.exports = function(grunt) {
       css_dest: config.distCSS + '/libs',
       js_dest: config.distJS + '/libs',
       options: {
+        expand: true,
         ignorePackages: [
           'modernizr',
           'extra-strength-responsive-grids',
+          'normalize.scss'
         ],
 
         packageSpecific: {
+          'jquery': {
+            keepExpandedHierarchy: false
+          },
           'lodash': {
             files: [
               'dist/lodash.js'
