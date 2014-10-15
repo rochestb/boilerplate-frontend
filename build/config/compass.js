@@ -19,7 +19,8 @@ module.exports = function(grunt) {
         './bower_components',
         config.css + '/app'
       ],
-      debugInfo: true
+      debugInfo: true,
+      force: true
     },
 
     dev: {},
@@ -27,8 +28,7 @@ module.exports = function(grunt) {
     dist: {
      options: {
        debugInfo: false,
-       outputStyle: 'compressed',
-       force: true
+       outputStyle: 'compressed'
      }
     }
   };
