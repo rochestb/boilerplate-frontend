@@ -11,17 +11,17 @@ module.exports = function(grunt) {
 
   // Config
   return {
-
     dist: {
       files: [{
         dot: true,
         src: [
           '.tmp',
-          '<%= config.dist %>/*',
-          '!<%= config.dist %>/.git*'
+          config.dist + '/*',
+          '!' + config.dist + '/.git*'
         ]
       }]
     },
+
     dev: '.tmp'
   };
 };
