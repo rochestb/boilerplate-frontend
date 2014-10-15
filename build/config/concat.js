@@ -10,10 +10,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
 
   // Config
-  return {
-    css: {
-      src: [ config.cssgen + '/**/*.css'],
-      dest: '.tmp/styles/app.css'
-    }
-  };
+  return {};
 };
