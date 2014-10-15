@@ -27,7 +27,7 @@ module.exports = function(grunt) {
           src: [
             'robots.txt',
             'favicon.ico',
-            'css/fonts/*'
+            'css/fonts/*/*'
           ],
           dest: './dist/'
         }
