@@ -33,7 +33,6 @@ module.exports = function(grunt) {
       'clean:dev',
       'bower:dev',
       'concurrent:dev',
-      'concat',
       'connect:dev',
       'watch',
       'modernizr:dev'
@@ -44,12 +43,10 @@ module.exports = function(grunt) {
     'clean:dist',
     'bower:dist',
     'compass:dist',
-    'concat',
-    'imagemin:dist',
-    'svgmin:dist',
-    'cssmin:dist',
-    'htmlmin:dist',
+    'concurrent:dist',
     'copy:dist',
-    'modernizr:dist'
+    'modernizr:dist',
+    'requirejs:dist',
+    'string-replace:dist',
   ]);
 };
