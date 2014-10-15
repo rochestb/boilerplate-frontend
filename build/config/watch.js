@@ -14,6 +14,15 @@ module.exports = function(grunt) {
     options: {
       livereload: true
     },
+    rebuild: {
+      tasks: [],
+      files: [
+        'Gruntfile.js',
+        'Gruntconfig.js',
+        'build/config/**/*.js'
+      ]
+    },
+
     js: {
       files: [
         'Gruntfile.js',
