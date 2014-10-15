@@ -20,3 +20,4 @@ source/js/libs
 bower_components
 
 .tmp
+dist/
