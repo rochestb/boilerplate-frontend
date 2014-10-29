@@ -32,10 +32,12 @@ module.exports = function(grunt) {
     grunt.task.run([
       'clean:dev',
       'bowercopy:dev',
+      'compass:dev',
       'concurrent:dev',
+      'modernizr:dev',
+      'stripmq:serve',
       'connect:dev',
-      'watch',
-      'modernizr:dev'
+      'watch'
     ]);
   });
 
