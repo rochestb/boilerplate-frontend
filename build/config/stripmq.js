@@ -18,13 +18,13 @@ module.exports = function(grunt) {
     },
 
     serve: {
-      src: '.tmp/styles/app.css',
-      dest: '.tmp/styles/app.ie8.min.css'
+      src: '.tmp/css/app/app.css',
+      dest: '.tmp/css/app/app.ie8.css'
     },
 
     dist: {
-      src: config.distCSS + '/app.min.css',
-      dest: config.distCSS + '/app.ie8.min.css'
+      src: config.distCSS + '/app.css',
+      dest: config.distCSS + '/app.ie8.css'
     }
 
   };

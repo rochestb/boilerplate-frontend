@@ -12,7 +12,6 @@ module.exports = function(grunt) {
   // Config
   return {
     dev: {
-      'devFile': 'bower_components/modernizr/modernizr.js',
       'outputFile': config.js + '/libs/modernizr.js',
 
       'extra': config.modernizr.extra,

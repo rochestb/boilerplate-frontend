@@ -14,7 +14,6 @@ module.exports = function(grunt) {
     dist: [
       'imagemin:dist',
       'svgmin:dist',
-      'cssmin:dist',
       'htmlmin:dist'
     ]
   };

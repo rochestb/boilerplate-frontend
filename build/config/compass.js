@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     options: {
       relativeAssets: true,
       sassDir: config.css,
-      cssDir: '.tmp/cssgen',
+      cssDir: '.tmp/css',
       importPath: [
         './bower_components',
         config.css + '/app'

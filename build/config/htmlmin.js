@@ -1,5 +1,5 @@
 /**
- * build.config.concat
+ * build.config.htmlmin
  */
 module.exports = function(grunt) {
   'use strict';
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         removeStyleLinkTypeAttributes: true
       },
       files: {
-        'dist/index.html': 'source/index.html'
+        '<%= config.dist %>/index.html': config.root + '/index.html'
       }
     }
   };

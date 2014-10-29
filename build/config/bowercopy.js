@@ -24,6 +24,9 @@ module.exports = function(grunt) {
       }
     },
 
+    // should not be needed, here as a placeholder.  The only scenario where we
+    // will need to add files here is if, during the requirejs build, it is 
+    // deleting files you need that is outside the main app.
     dist: {}
   };
 };
