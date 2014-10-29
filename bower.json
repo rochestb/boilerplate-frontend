@@ -18,13 +18,10 @@
     "tests"
   ],
   "dependencies": {
-    "normalize.scss": "~3.0.1+normalize.3.0.1",
     "extra-strength-responsive-grids": "https://github.com/dfcb/extra-strength-responsive-grids.git",
     "jquery": "~2.1.1",
     "lodash": "~2.4.1",
-    "requirejs": "~2.1.14"
-  },
-  "resolutions": {
-    "normalize.scss": "~3.0.1+normalize.3.0.1"
+    "requirejs": "~2.1.14",
+    "normalize-scss": "git+https://github.com/cpbtechnology/normalize-scss.git#~3.0.1"
   }
 }
