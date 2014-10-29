@@ -23,13 +23,16 @@ module.exports = function() {
 
   config.modernizr = {
     // https://github.com/Modernizr/modernizr.com/blob/gh-pages/i/js/modulizr.js#L15-157
-    tests: [],
+    tests: [
+      'svg',
+      'inlinesvg'
+    ],
 
     extra: {
       'shiv' : true,
       'printshiv' : false,
       'load' : true,
-      'mq' : false,
+      'mq' : true,
       'cssclasses' : true
     },
 
