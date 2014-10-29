@@ -9,6 +9,8 @@ Thumbs.db
 node_modules/
 bower_components
 
+bin/
+
 # Ignore generated files from Grunt
 source/js/libs
 
