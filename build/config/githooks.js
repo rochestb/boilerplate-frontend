@@ -10,9 +10,6 @@ module.exports = function(grunt) {
   // Config
   return {
     all: {
-      options: {
-        template: 'hooks/pre-commit.js'
-      },
       'pre-commit': 'test'
     }
   };
