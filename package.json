@@ -2,7 +2,7 @@
   "name": "PROJECT_NAME",
   "version": "0.0.1",
   "scripts": {
-    "postinstall": "export PATH=bin:$PATH && bower install && bundle install --binstubs"
+    "postinstall": "export PATH=bin:$PATH && bower install && bundle install --binstubs && grunt githooks"
   },
   "dependencies": {},
   "devDependencies": {
