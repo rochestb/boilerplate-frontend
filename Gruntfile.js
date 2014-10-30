@@ -51,4 +51,10 @@ module.exports = function(grunt) {
     'requirejs:dist',
     'string-replace:dist',
   ]);
+
+  grunt.registerTask('test', 'run all the test', [
+    'jshint',
+    'jscs',
+    'scsslint'
+  ]);
 };
