@@ -1,0 +1,56 @@
+{
+  "bitwise": true,
+  "browser": true,
+  
+  "camelcase": true,
+  "curly": true,
+  
+  "devel": false, // we don't want debug to make it to dev/stage/prod
+  
+  "eqnull": false, // only enable if we really need to compare against null
+  
+  "globals": {
+    "define": true,
+    "require": true,
+    "Modernizr": true
+  },
+
+  "immed": true,
+  "indent": 2,
+
+  "jquery": true,
+
+  "latedef": true,
+
+  "maxcomplexity": 6, // http://www.jshint.com/docs/options/#maxcomplexity
+  "maxdepth": 4, // http://www.jshint.com/docs/options/#maxdepth
+  "maxparams": 4, // http://www.jshint.com/docs/options/#maxparams
+  "maxlen": 80, // http://www.jshint.com/docs/options/#maxlen
+
+  "maxstatements": 15, // http://www.jshint.com/docs/options/#maxstatements
+
+  "newcap": true,
+  "noarg": true,
+  "node": true,
+  "nonstandard": true,
+
+  "phantom": true,
+  "predef":[
+    "Marionette",
+    "Backbone",
+    "_",
+    "TweenLite",
+    "Cubic",
+    "Circ"
+  ],
+
+  "quotmark": "single",
+
+  "smarttabs": true,
+  "strict": true,
+
+  "trailing": true,
+
+  "undef": true,
+  "unused": true
+}

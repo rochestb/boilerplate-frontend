@@ -1,0 +1,27 @@
+{
+  "name": "boilerplate-frontend",
+  "version": "0.0.0",
+  "homepage": "https://github.com/cpbtechnology/boilerplate-frontend",
+  "authors": [
+    "Benjamin Sterling <benjamin.sterling@kenzomedia.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "extra-strength-responsive-grids": "https://github.com/dfcb/extra-strength-responsive-grids.git",
+    "jquery": "~2.1.1",
+    "lodash": "~2.4.1",
+    "requirejs": "~2.1.14",
+    "normalize-scss": "git+https://github.com/cpbtechnology/normalize-scss.git#~3.0.1"
+  }
+}

@@ -1,9 +1,9 @@
 // 04._utilities.scss
 
-@import "_modules/_variables.scss";
-@import "_modules/_mixins.scss";
+@import '_modules/_variables.scss';
+@import '_modules/_mixins.scss';
 
-@import "compass/css3/opacity";
+@import 'compass/css3/opacity';
 
 
 /********************************************************** Performance */
@@ -78,12 +78,12 @@
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: ' '; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /**
@@ -91,5 +91,5 @@
  * Include this rule to trigger hasLayout and contain floats.
  */
 .clearfix {
-    *zoom: 1;
+  *zoom: 1;
 }

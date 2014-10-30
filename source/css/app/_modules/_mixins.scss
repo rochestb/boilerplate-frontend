@@ -2,8 +2,6 @@
 //   and functions
 //   and $font-size-* variables
 
-@import "_modules/_variables.scss";
-@import "compass/css3/transition";
 
 
 // mq()
@@ -61,10 +59,10 @@
 //   EXAMPLE
 //     @include color-each-pseudo-element-link($link-dark, $link-dark, $link-dark-hover, $link-dark-hover);
 @mixin color-each-pseudo-element-link($link, $visited, $hover, $active) {
-  &:link    { color: $link; }
+  &:link { color: $link; }
   &:visited { color: $visited; }
-  &:hover   { color: $hover; }
-  &:active  { color: $active; }
+  &:hover { color: $hover; }
+  &:active { color: $active; }
 }
 
 
@@ -84,7 +82,7 @@
 //  Converts hex in to rgb and allows for opacity variable
 //  Example
 //    rgb-alpha($black, .5);
-@function rgb-alpha($color, $opacity: 1){
+@function rgb-alpha($color, $opacity: 1) {
   @return rgba($color, $opacity);
 }
 

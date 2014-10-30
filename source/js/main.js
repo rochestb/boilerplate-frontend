@@ -12,8 +12,8 @@ require.config({
 
   paths: {
     // Core Libraries
-    jquery:    'libs/jquery-1.11.1.min',
-    underscore:'libs/lodash.underscore.min',
+    jquery: 'libs/jquery/jquery',
+    lodash: 'libs/lodash/lodash',
 
     // Helper Modules
     helpers: 'apps/helpers'
@@ -21,32 +21,25 @@ require.config({
     // 3rd party
   },
 
-  // Sets the configuration for your third party scripts that are not AMD compatible
+  // Sets the configuration for your third party scripts that are not
+  // AMD compatible
   shim: {
-
-    underscore: {
-      exports: '_'
-    },
-
     lodash: {
       exports: '_'
     }
-
   }
 }); // end require.config
-
 
 /**
  * main
  */
-define('main', function() {
-
+require([
+  'jquery',
+  'lodash',
+  'apps/master/app'
+], function($, _, App) {
   'use strict';
 
-  require(['apps/master/app'], function(App) { 
-
-    // Start the application
-    App.start();
-
-  });
+  // Start the application
+  App.start();
 });

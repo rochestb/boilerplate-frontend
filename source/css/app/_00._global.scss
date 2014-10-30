@@ -1,19 +1,12 @@
 // 00.global.scss
 
-@import "_modules/_variables.scss";
-@import "_modules/_mixins.scss";
-
-@import "_vendor/_normalize.scss";
-@import "_vendor/_grid.generator.scss";
-
-
 /********************************************************** Viewport */
 
-@-webkit-viewport{width:device-width}
-   @-moz-viewport{width:device-width}
-    @-ms-viewport{width:device-width}
-     @-o-viewport{width:device-width}
-        @viewport{width:device-width}
+@-webkit-viewport {width: device-width;}
+@-moz-viewport {width: device-width;}
+@-ms-viewport {width: device-width;}
+@-o-viewport {width: device-width;}
+@viewport {width: device-width;}
 
 
 /********************************************************** Grid */
@@ -48,7 +41,6 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url(boxsizing.htc);
 }
 
 
@@ -77,6 +69,8 @@ a {
   // Optionally color each psuedo link element, see _modules/mixins.scss
   //@include color-each-pseudo-element-link($black, $black, $black, $black);
 
-  &:focus { outline: thin dotted; } 
-  &:hover, &:active { outline: 0; }
+  &:focus { outline: thin dotted; }
+
+  &:hover, 
+  &:active { outline: 0; }
 }

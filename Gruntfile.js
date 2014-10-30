@@ -1,7 +1,9 @@
+/*jshint maxstatements:false */
 /**
  * build.config
  */
 module.exports = function(grunt) {
+  'use strict';
 
   // Define grunt config option
   grunt.config.set('config', require('./Gruntconfig')());
@@ -14,53 +16,39 @@ module.exports = function(grunt) {
   // Measures the time each task takes
   require('time-grunt')(grunt);
 
+  grunt.registerTask(
+    'serve',
+    'start the server and preview your app, --allow-remote for remote access',
+    function(target) {
 
-  /**
-   * Default task
-   */
-  grunt.registerTask('default', [
-    // CSS
-    'compass:all',      // run compass to process scss
-    'concat:css',       // concatenate processed css
-    'cssmin:css',       // minify concatenated css
-    'clean:concatcss',  // delete the concatenated css directory/file
+    if (grunt.option('allow-remote')) {
+      grunt.config.set('connect.options.hostname', '0.0.0.0');
+    }
 
-    // JS
-    'newer:jshint:all', // run jshint to lint js
-    'requirejs:build',  // run require to build and minify js
+    if (target === 'dist') {
+      return grunt.task.run(['build', 'connect:dist:keepalive']);
+    }
 
-    // Images
-    'newer:imagemin:images' // minify images
+    grunt.task.run([
+      'clean:dev',
+      'bowercopy:dev',
+      'compass:dev',
+      'concurrent:dev',
+      'modernizr:dev',
+      'stripmq:serve',
+      'connect:dev',
+      'watch'
+    ]);
+  });
+
+  grunt.registerTask('dist', 'build all static files', [
+    'clean:dist',
+    'bowercopy:dev',
+    'compass:dist',
+    'concurrent:dist',
+    'copy:dist',
+    'modernizr:dist',
+    'requirejs:dist',
+    'string-replace:dist',
   ]);
-
-
-  /**
-   * Build task
-   *
-   * A full Grunt build of the project.
-   * Same task as default without the 'newer' prefix so all files are processed
-   */
-  grunt.registerTask('build', [
-    // CSS
-    'compass:all',     // run compass to process scss
-    'concat:css',      // concatenate processed css
-    'cssmin:css',      // minify concatenated css
-    'clean:concatcss', // delete the concatenated css directory/file
-
-    // JS
-    'jshint:all',      // run jshint to lint js
-    'requirejs:build', // run require to build and minify js
-
-    // Images
-    'imagemin:images'  // minify images
-  ]);
-
-
-  /**
-   * Cleanup tasks
-   *
-   * Remove the processed Sass CSS files and require minified js then run the build task
-   */
-  grunt.registerTask('cleanup', ['clean:generated', 'build']);
-
 };

@@ -2,6 +2,7 @@
  * build.config.imagemin
  */
 module.exports = function(grunt) {
+  'use strict';
 
   var config = grunt.config.get('config');
 
@@ -11,12 +12,20 @@ module.exports = function(grunt) {
   // Config
   return {
 
-    images: {
+    dev: {
       expand: true,
       cwd: config.images,
       src: ['**/*.{png,jpg,gif}'],
       dest: config.images
-    }
+    },
 
+    dist: {
+      files: [{
+        expand: true,
+        cwd: config.images,
+        src: '{,*/}*.{gif,jpeg,jpg,png}',
+        dest: config.distImages
+      }]
+    }
   };
 };

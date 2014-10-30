@@ -2,6 +2,7 @@
  * build.config.compass
  */
 module.exports = function(grunt) {
+  'use strict';
 
   var config = grunt.config.get('config');
 
@@ -10,14 +11,25 @@ module.exports = function(grunt) {
 
   // Config
   return {
+    options: {
+      relativeAssets: true,
+      sassDir: config.css,
+      cssDir: '.tmp/css',
+      importPath: [
+        './bower_components',
+        config.css + '/app'
+      ],
+      debugInfo: true,
+      force: true
+    },
 
-    all: {
-      options: {
-        relativeAssets: true,
-        sassDir: config.css +'/app',
-        cssDir: config.cssgen
-      }
+    dev: {},
+
+    dist: {
+     options: {
+       debugInfo: false,
+       outputStyle: 'compressed'
+     }
     }
-
   };
 };

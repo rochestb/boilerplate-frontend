@@ -2,6 +2,7 @@
  * build.config.watch
  */
 module.exports = function(grunt) {
+  'use strict';
 
   var config = grunt.config.get('config');
 
@@ -10,26 +11,39 @@ module.exports = function(grunt) {
 
   // Config
   return {
-
-    all: {
+    options: {
+      livereload: true
+    },
+    rebuild: {
+      tasks: [],
       files: [
-        // Grunt config
         'Gruntfile.js',
+        'Gruntconfig.js',
+        'build/config/**/*.js'
+      ]
+    },
+
+    js: {
+      files: [
+        'Gruntfile.js',
+        'Gruntconfig.js',
         'build/config/**/*.js',
-
-        // JS
-        config.js +'/**/*.js',
-        '!'+ config.js +'/**/*min.js',
-
-        // CSS
-        config.css +'/app/**/*.scss',
-
-        // Images
-        config.images +'/**/*.{png,jpg,gif}'
+        config.js + '/**/*.js',
+        '!' + config.js + '/libs/*.js'
       ],
-
-      tasks: ['default']
+      tasks: [
+        'jshint',
+        'jscs'
+      ]
+    },
+    css: {
+     files: [
+       config.css + '/**/*'
+     ],
+      tasks: [
+        'compass:server',
+        'concat'
+      ]
     }
-
   };
 };
