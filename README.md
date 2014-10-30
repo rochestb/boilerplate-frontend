@@ -23,7 +23,7 @@ This set up is for static sites and not initailly set up to handle dynamic sites
 
 ## Quick Start
 
-* run `npm install`
+* run `npm install` (you may need to do `sudo npm install` due to the execSync module)
 * run `grunt serve` while developing (see below for info on `grunt serve`)
 
 
