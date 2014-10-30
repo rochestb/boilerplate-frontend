@@ -1,7 +1,7 @@
 [remove]
 
 #### Initial Setup
-This set up is for static sites and not initailly set up to handle dynamic sites.  I can be retro fitted to make that happen, but it is not the case now.
+This set up is for static sites and not initailly set up to handle dynamic sites.  It can be retro fitted to make that happen, but it is not the case now.
 
 * Update project name in /README.md
 * Update project name in /package.json
