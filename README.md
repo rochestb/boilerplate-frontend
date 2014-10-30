@@ -23,7 +23,7 @@ This set up is for static sites and not initailly set up to handle dynamic sites
 
 ## Quick Start
 
-* run `npm install && bower install && grunt serve`
+* run `npm install`
 * run `grunt serve` while developing (see below for info on `grunt serve`)
 
 
