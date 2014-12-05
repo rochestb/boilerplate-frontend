@@ -33,6 +33,12 @@ module.exports = function(grunt) {
         }
       }
     },
+    dist: {
+      options: {
+        base: config.dist,
+        livereload: false
+      }
+    },
     test: {
       options: {
         open: false,
@@ -48,12 +54,6 @@ module.exports = function(grunt) {
             connect.static(config.root)
           ];
         }
-      }
-    },
-    dist: {
-      options: {
-        base: config.dist,
-        livereload: false
       }
     }
   };

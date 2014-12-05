@@ -9,6 +9,7 @@ module.exports = function(grunt) {
 
   // Config
   return {
+    dev: {},
     dist: {
       options: {
         replacements: [

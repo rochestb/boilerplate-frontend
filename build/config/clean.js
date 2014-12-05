@@ -11,6 +11,8 @@ module.exports = function(grunt) {
 
   // Config
   return {
+
+    dev: '.tmp',
     dist: {
       files: [{
         dot: true,
@@ -20,8 +22,6 @@ module.exports = function(grunt) {
           '!' + config.dist + '/.git*'
         ]
       }]
-    },
-
-    dev: '.tmp'
+    }
   };
 };

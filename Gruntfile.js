@@ -35,7 +35,7 @@ module.exports = function(grunt) {
       'compass:dev',
       'concurrent:dev',
       'modernizr:dev',
-      'stripmq:serve',
+      'stripmq:dev',
       'connect:dev',
       'watch'
     ]);

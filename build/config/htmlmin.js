@@ -11,6 +11,7 @@ module.exports = function(grunt) {
 
   // Config
   return {
+    dev: {},
     dist: {
       options: {
         removeComments: true,

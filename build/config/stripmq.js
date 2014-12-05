@@ -17,7 +17,7 @@ module.exports = function(grunt) {
       type: 'screen'
     },
 
-    serve: {
+    dev: {
       src: '.tmp/css/app/app.css',
       dest: '.tmp/css/app/app.ie8.css'
     },

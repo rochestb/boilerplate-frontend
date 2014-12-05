@@ -14,6 +14,7 @@ module.exports = function(grunt) {
     options: {
       livereload: true
     },
+
     rebuild: {
       tasks: [],
       files: [
@@ -36,12 +37,13 @@ module.exports = function(grunt) {
         'jscs'
       ]
     },
+
     css: {
      files: [
        config.css + '/**/*'
      ],
       tasks: [
-        'compass:server',
+        'compass:dev',
         'concat'
       ]
     }
