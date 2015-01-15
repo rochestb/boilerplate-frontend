@@ -17,6 +17,7 @@ linters:
 
   DeclarationOrder:
     enabled: true
+  
 
   DuplicateProperty:
     enabled: true
@@ -49,6 +50,9 @@ linters:
 
   IdWithExtraneousSelector:
     enabled: true
+
+  ImportPath:
+    enabled: false
 
   Indentation:
     enabled: true
