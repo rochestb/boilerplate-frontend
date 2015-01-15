@@ -15,14 +15,16 @@ This set up is for static sites and not initailly set up to handle dynamic sites
 [ADD SHORT DISCRIPTION OF PROJECT]
 
 ## Requirements
-* [node.js](http://nodejs.org/)
+* [ruby](https://www.ruby-lang.org/en/)
+* [bundler](http://bundler.io/)
 * [sass](http://sass-lang.com/)
 * [compass](compass-style.org)
-* [bundler](http://bundler.io/)
+* [node.js](http://nodejs.org/)
 * [grunt](http://gruntjs.com)
 
 ## Quick Start
 
+* run `npm install -g grunt grunt-cli` (can skip if you've already got them installed)
 * run `npm install` (you may need to do `sudo npm install` due to the execSync module)
 * run `grunt serve` while developing (see below for info on `grunt serve`)
 
@@ -40,7 +42,7 @@ A few quick reminders as you are developing.
 
 ### Modernizr
 
-Boilerplate has a custom builder of Modernizr that will allow you to add your own tests. Please update `build/config/modernizr.js` with tests that are needed instead of loading the whole development version.  See [https://github.com/Modernizr/grunt-modernizr](https://github.com/Modernizr/grunt-modernizr) for more settings.
+Boilerplate has a custom builder of Modernizr that will allow you to add your own tests. Please update `Gruntconfig.js` with tests that are needed instead of loading the whole development version.  See [https://github.com/Modernizr/grunt-modernizr](https://github.com/Modernizr/grunt-modernizr) for more settings.
 
 This approach will limit the Modernizr tests to only those needed for the project. As a benefit we prevent running every Modernizr test on every page load of the site.
 
@@ -72,7 +74,7 @@ All `:dev` grunt tasks are for local development and all `:dist` are used for di
   * `grunt modernizr:dev` - Compiles modernizr based on the `Gruntconfig.js`
   * `grunt modernizr:dist` - Compiles modernizr based on the `Gruntconfig.js` but uglified
 * `grunt requirejs` - Runs through all JavaScript files and merges all dependencies to a single file.  *As the project grows, modules should be created to lesson the chances of have large JavaScript files*
-* `grunt svgmin:dist` = Minifies svg from `source` and saves to `dist`
+* `grunt svgmin:dist` - Minifies svg from `source` and saves to `dist`
 * `grunt usebanner` - adds a banner to the top of each file that is created*
   * `grunt usebanner:distjs` - adds a banner to JavaScript files
   * `grunt usebanner:distcss` - adds a banner to CSS files

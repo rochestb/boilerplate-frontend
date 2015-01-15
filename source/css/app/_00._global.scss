@@ -1,4 +1,5 @@
 // 00.global.scss
+@import 'compass/css3/selection';
 
 /********************************************************** Viewport */
 
@@ -30,28 +31,30 @@
 }
 */
 
-
 /********************************************************** Box Sizing *
   Box Sizing
   Apply a natural box layout model to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw/
   border-box polyfill for IE 6/7: https://github.com/Schepp/box-sizing-polyfill#readme
+
+  http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 */
 
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+html {
+  @include box-sizing('border-box');
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 
 /********************************************************** General */
 
-::-moz-selection { background: $black; color: $white; }
-::selection { background: $black; color: $white; }
-
-
 html,
 body {
+  @include selection($black, $white);
   height: 100%;
   margin: 0;
   padding: 0;

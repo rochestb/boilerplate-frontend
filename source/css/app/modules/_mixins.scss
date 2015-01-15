@@ -23,11 +23,9 @@
   $height: nth($size, 2);
   $slope: $height / $width;
 
-  padding-top: percentage($slope);
-
-  background-size: cover;
-  -moz-background-size: cover;  /* Firefox 3.6 */
+  @include background-size('cover');
   background-position: center;  /* Internet Explorer 7/8 */
+  padding-top: percentage($slope);
 }
 
 
@@ -43,13 +41,14 @@
   $height-small: nth($small-size, 2);
   $slope: ($height-large - $height-small) / ($width-large - $width-small);
   $height: $height-small - $width-small * $slope;
+  
+  @include background-size('cover');
 
-  padding-top: percentage($slope);
-  height: $height;
-
-  background-size: cover;
-  -moz-background-size: cover;  /* Firefox 3.6 */
   background-position: center;  /* Internet Explorer 7/8 */
+  height: $height;
+  padding-top: percentage($slope);
+
+  
 }
 
 
@@ -95,20 +94,23 @@
 //     50% { background: #BADA55; }
 //     100%{ background: #F00; }
 //   }
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
-    @content; 
-  }
-  @-moz-keyframes #{$name} {
-    @content;
-  }
-  @-o-keyframes #{$name} {
-    @content;
-  }
-  @keyframes #{$name} {
-    @content;
-  } 
-}
+
+// this should be about to be done away with in favor of compass'
+// http://compass-style.org/reference/compass/css3/animation/#mixin-keyframes
+//@mixin keyframes($name) {
+//  @-webkit-keyframes #{$name} {
+//    @content; 
+//  }
+//  @-moz-keyframes #{$name} {
+//    @content;
+//  }
+//  @-o-keyframes #{$name} {
+//    @content;
+//  }
+//  @keyframes #{$name} {
+//    @content;
+//  } 
+//}
 
 
 // strip-units()

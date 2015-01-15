@@ -3,14 +3,14 @@
 @import 'compass/css3';
 @import 'compass/css3/transition';
 
-@import '_modules/_variables';
-@import '_modules/_mixins';
+@import 'modules/_variables';
+@import 'modules/_mixins';
 
 @import 'normalize-scss/_normalize';
 
 @import 'extra-strength-responsive-grids/css/_grid.generator';
 
-@import '_modules/_animations';
+@import 'modules/_animations';
 
 @import '_00._global';
 
