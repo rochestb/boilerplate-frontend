@@ -43,8 +43,7 @@ module.exports = function(grunt) {
        config.css + '/**/*'
      ],
       tasks: [
-        'compass:dev',
-        'concat'
+        'compass:dev'
       ]
     }
   };
