@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       },
       files: {
         'jquery': 'jquery:main',
-        'lodash': 'lodash:main',
+        'lodash/lodash.js': 'lodash/dist/lodash.js',
         'requirejs/requirejs.js': 'requirejs:main'
       }
     },
