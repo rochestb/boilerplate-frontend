@@ -32,7 +32,7 @@ module.exports = function(grunt) {
     grunt.task.run([
       'clean:dev',
       'bowercopy:dev',
-      'compass:dev',
+      'sass:dev',
       'concurrent:dev',
       'modernizr:dev',
       'stripmq:dev',
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
   grunt.registerTask('dist', 'build all static files', [
     'clean:dist',
     'bowercopy:dev',
-    'compass:dist',
+    'sass:dist',
     'concurrent:dist',
     'copy:dist',
     'modernizr:dist',
