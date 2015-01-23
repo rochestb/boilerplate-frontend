@@ -25,13 +25,13 @@ module.exports = function(grunt) {
       files: [
         {
           expand: true,
-          cwd: './source',
+          cwd: config.root,
           src: [
             'robots.txt',
             'favicon.ico',
-            'css/fonts/*/*'
+            'css/fonts/**/*'
           ],
-          dest: './dist/'
+          dest: config.dist
         }
       ]
     }
