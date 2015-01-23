@@ -26,10 +26,11 @@ module.exports = function(grunt) {
     dev: {},
 
     dist: {
-     options: {
-       debugInfo: false,
-       outputStyle: 'compressed'
-     }
+      options: {
+        debugInfo: false,
+        outputStyle: 'compressed',
+        cssDir: config.distCSS
+      }
     }
   };
 };
