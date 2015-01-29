@@ -18,9 +18,9 @@ module.exports = function(grunt) {
         destPrefix: jslibs
       },
       files: {
-        'jquery': 'jquery:main',
-        'lodash/lodash.js': 'lodash/dist/lodash.js',
-        'requirejs/requirejs.js': 'requirejs:main'
+        'jquery': 'jquery/dist/jquery.js',
+        'lodash': 'lodash/dist/lodash.js',
+        'requirejs': 'requirejs/require.js'
       }
     },
 
