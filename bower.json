@@ -23,5 +23,10 @@
     "lodash": "~2.4.1",
     "requirejs": "~2.1.14",
     "normalize-scss": "git+https://github.com/cpbtechnology/normalize-scss.git#~3.0.1"
+  },
+  "exportsOverride": {
+    "lodash": {
+      ".": "dist/lodash.js"
+    }
   }
 }
