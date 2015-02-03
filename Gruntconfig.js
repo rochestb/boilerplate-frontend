@@ -24,7 +24,7 @@ module.exports = function() {
   config.jquery = {
     version: '1.11.1',
     exclude: 'ajax,effects',
-    dest: config.js + 'jquery.js'
+    dest: config.js + '/jquery.js'
   };
 
   config.modernizr = {
