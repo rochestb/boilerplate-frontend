@@ -24,3 +24,4 @@ bower_components
 
 .tmp
 dist/
+source/js/jquery.js
