@@ -57,4 +57,39 @@ module.exports = function(grunt) {
     'jscs',
     'scsslint'
   ]);
+
+  /**
+   * Custom build jQuery based on configs in Gruntconfig.js
+   */
+  grunt.registerTask(
+    'jquery',
+    'Build a custom jQuery',
+    function() {
+      grunt.log.writeln('Starting the jQuery Build Process');
+
+      var done = this.async(),
+          jquery = grunt.config.get('config').jquery,
+          exec = require('child_process').exec,
+          command = 'node node_modules/jquery-builder/bin/builder.js ' +
+                    '-v ' + jquery.version + ' ' +
+                    '--exclude ' + jquery.exclude +
+                    ' > ' + jquery.dest,
+          child;
+
+      grunt.log.writeln('Execute the jQuery Build Process');
+
+      child = exec(
+        command,
+        function (error) {
+          if (error !== null) {
+            grunt.log.error('exec error: ' + error);
+          } else {
+            grunt.log.writeln('jQuery Build Process was successful');
+          }
+
+          done();
+        }
+      );
+    }
+  );
 };
