@@ -17,7 +17,7 @@ module.exports = function() {
   config.images = config.root + '/images';
 
   config.dist = 'dist';
-  config.distCSS = config.dist + '/styles';
+  config.distCSS = config.dist + '/css';
   config.distJS = config.dist + '/js';
   config.distImages = config.dist + '/images';
 
