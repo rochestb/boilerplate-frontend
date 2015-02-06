@@ -11,17 +11,17 @@ module.exports = function(grunt) {
   return {
     dev: {},
     dist: {
-      options: {
-        replacements: [
-          {
-            pattern: 'app.css',
-            replacement: 'app.min.css'
-          }
-        ]
-      },
-      files: {
-        'dist/index.html': 'dist/index.html'
-      }
+      // options: {
+      //   replacements: [
+      //     {
+      //       pattern: 'app.css',
+      //       replacement: 'app.min.css'
+      //     }
+      //   ]
+      // },
+      // files: {
+      //   'dist/index.html': 'dist/index.html'
+      // }
     }
   };
 };
