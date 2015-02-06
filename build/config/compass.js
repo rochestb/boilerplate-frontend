@@ -20,7 +20,8 @@ module.exports = function(grunt) {
         config.css + '/app'
       ],
       debugInfo: true,
-      force: true
+      force: true,
+      sourcemap: true
     },
 
     dev: {},
