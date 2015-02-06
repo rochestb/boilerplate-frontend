@@ -1,26 +1,31 @@
-
-@import 'compass';
-@import 'compass/css3';
-@import 'compass/css3/transition';
-
-@import 'modules/_variables';
-@import 'modules/_mixins';
-
-@import 'normalize-scss/_normalize';
+@charset 'utf-8';
 
 @import 'extra-strength-responsive-grids/css/_grid.generator';
 
-@import 'modules/_animations';
+// Your mixins & functions
+@import 'functions/**/*';
+@import 'mixins/**/*';
 
-@import '_00._global';
+// Global config variables: colors, font stacks, etc
+@import 'variables';
 
-@import '_01._typography';
+// @font-face webfonts
+@import 'fonts/**/*';
 
-@import '_02._widgets';
-@import '_02.widgets.header';
+// @keyframe animations
+@import 'animations/**/*';
 
-@import '_03._pages';
+// normalize.css
+@import 'normalize-scss/_normalize';
 
-@import '_04._utilities';
+// Our own base styles
+@import 'defaults/**/*';
 
-@import '_05._shame';
+// Modules
+// ------------------------------------------------
+@import 'modules/**/*';
+
+@import 'utilities/**/*';
+
+// SHAME!!!!
+@import 'shame';
