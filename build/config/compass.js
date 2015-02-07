@@ -21,7 +21,8 @@ module.exports = function(grunt) {
       ],
       debugInfo: true,
       force: true,
-      require: 'sass-globbing'
+      require: 'sass-globbing',
+      sourcemap: true
     },
 
     dev: {},
