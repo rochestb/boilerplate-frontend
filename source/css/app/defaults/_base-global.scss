@@ -10,27 +10,6 @@
 @viewport {width: device-width;}
 
 
-/********************************************************** Grid */
-
-/* Grid disabled by default
-// Generate the grid
-@include gridGenerator(
-  (0, $breakpoint-s, $breakpoint-m, $breakpoint-l), // breakpoints
-  'em',        // breakpoint type 'px' or 'em'
-  12,          // number of grid columns
-  $space,      // outer padding
-  ($space /2), // inner padding
-  (mobile-,s-,m-,l-) // grid prefixes: l-grid-half
-);
-
-
-// Additional Grid Classes
-.grid-centered {
-  float: none;
-  margin: 0 auto;
-}
-*/
-
 /********************************************************** Box Sizing *
   Box Sizing
   Apply a natural box layout model to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw/
@@ -55,25 +34,26 @@ html {
 html,
 body {
   @include selection($black, $white);
+  background: $white;
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-body {
-  background: $white;
+img {
+  max-width: 100%;
 }
-
-img { max-width: 100%; }
 
 a {
   color: $black;
   text-decoration: underline;
-  // Optionally color each psuedo link element, see _modules/mixins.scss
-  //@include color-each-pseudo-element-link($black, $black, $black, $black);
 
-  &:focus { outline: thin dotted; }
+  &:focus {
+    outline: thin dotted;
+  }
 
   &:hover, 
-  &:active { outline: 0; }
+  &:active {
+    outline: 0;
+  }
 }
