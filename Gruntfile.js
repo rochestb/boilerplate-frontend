@@ -36,6 +36,7 @@ module.exports = function(grunt) {
       'concurrent:dev',
       'modernizr:dev',
       'stripmq:dev',
+      'assemble:dev',
       'connect:dev',
       'watch'
     ]);
@@ -45,6 +46,7 @@ module.exports = function(grunt) {
     'clean:dist',
     'bowercopy:dev',
     'compass:dist',
+    'assemble:dist',
     'concurrent:dist',
     'copy:dist',
     'modernizr:dist',

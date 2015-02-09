@@ -45,6 +45,15 @@ module.exports = function(grunt) {
       tasks: [
         'compass:dev'
       ]
+    },
+
+    assemble: {
+      files: [
+        config.tmpl + '/**/*'
+      ],
+      tasks: [
+        'assemble:dev'
+      ]
     }
   };
 };

@@ -9,6 +9,7 @@ module.exports = function() {
   config.root  = 'source';
   config.js    = config.root + '/js';
   config.jsmin = config.js   + '/min';
+  config.tmpl  = config.root + '/templates'
 
   config.css    = config.root + '/css';
   config.cssgen = '.tmp/cssgen';

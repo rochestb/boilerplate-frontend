@@ -1,0 +1,96 @@
+{
+  "form": {
+    "text__input": {
+      "containerClass": "field-container",
+      "label": "Text Input",
+      "input": {
+        "type": "text",
+        "name": "username",
+        "id": "username",
+        "placeholder": "Type your username",
+        "class": "",
+        "readonly": false
+      }
+    },
+    "text__password": {
+      "type": "password",
+      "name": "password",
+      "id": "password",
+      "placeholder": "Type your password",
+      "class": ""
+    },
+    "text__webaddress": {
+      "type": "url",
+      "name": "webaddress",
+      "id": "webaddress",
+      "placeholder": "http://yoursite.com",
+      "class": ""
+    },
+    "text__email": {
+      "type": "email",
+      "name": "email",
+      "id": "email",
+      "placeholder": "mail@yoursite.com",
+      "class": ""
+    },
+    "text__search": {
+      "type": "search",
+      "name": "search",
+      "id": "search",
+      "placeholder": "Enter Search Term",
+      "class": ""
+    },
+    "text__number": {
+      "type": "number",
+      "name": "number",
+      "id": "number",
+      "placeholder": "Enter a Number",
+      "class": ""
+    },
+    "text__error": {
+      "type": "text",
+      "name": "username",
+      "id": "username",
+      "placeholder": "Type your username",
+      "class": "is-error",
+      "readonly": false
+    },
+    "text__valid": {
+      "type": "text",
+      "name": "username",
+      "id": "username",
+      "placeholder": "Type your username",
+      "class": "is-valid",
+      "readonly": false
+    },
+    "text__area": {
+      "name": "text__area",
+      "id": "text__area",
+      "placeholder": "Here is some text",
+      "class": "is-valid",
+      "readonly": false
+    },
+    "button": {
+      "isSubmit": true,
+      "value": "Submit",
+      "class": "btn"
+    }
+  },
+  "selectmenu": {
+    "titles": [
+      {
+        "value": "mr",
+        "text": "Mr"
+      },
+      {
+        "value": "ms",
+        "text": "Ms"
+      },
+      {
+        "value": "mrs",
+        "text": "Mrs"
+      }
+    ],
+    "selected": "mr"
+  }
+}
