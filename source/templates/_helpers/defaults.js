@@ -20,7 +20,10 @@ module.exports.register = function (Handlebars, options)  {
   }
 
   function createElement(type, closing, attr, contents) {
-    contents = contents.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+    try{
+      contents = (contents || '').replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+    } catch(e){}
+
     return openTag(type, closing, attr) + (closing ? (contents || '') + closeTag(type) : '');
   }
 
@@ -44,7 +47,6 @@ module.exports.register = function (Handlebars, options)  {
    * {{/link}}
    */
   Handlebars.registerHelper('link', function(input, body, options) {
-
 
     options = Array.prototype.pop.call(arguments);
     body = options.fn && options.fn(this) || body;
