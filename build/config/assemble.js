@@ -15,7 +15,8 @@ module.exports = function(grunt) {
       helpers: [
         'handlebars-helpers',
         'swag',
-        'handlebars-form-helpers'
+        'handlebars-form-helpers',
+        config.tmpl + '/_helpers/*'
       ],
       layout: 'default.hbs',
       layoutdir: config.tmpl + '/_layouts',
