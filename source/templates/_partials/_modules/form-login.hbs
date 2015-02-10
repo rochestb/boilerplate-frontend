@@ -1,0 +1,39 @@
+{{!
+  @param heading
+  @param username
+  @param password
+  @param showForgotPassword
+  @param button
+  @see /templates/_partials/_modules/input__text-label-sibling.hbs
+  @see /templates/_partials/_elements/input__button.hbs
+}}
+<section class="form-login">
+  <div class="">
+    <h1>{{this.heading}}</h1>
+    <form method="post" action="index.html">
+      <fieldset>
+        <legend class="visuallyhidden">Login Form</legend>
+
+        {{>input__text-label-sibling this.username}}
+        {{>input__text-label-sibling this.password}}
+
+      <p class="form-login__remember-me">
+        <label for="remember_me">
+          <input type="checkbox" name="remember_me" id="remember_me">
+          Remember me on this computer
+        </label>
+      </p>
+      </fieldset>
+
+      <p class="form-login__submit">
+        {{>input__button this.button}}
+      </p>
+    </form>
+  </div>
+
+  {{#if this.showForgotPassword}}
+  <div class="form-login__forgot">
+    <p>Forgot your password? <a href="index.html">Click here to reset it</a>.</p>
+  </div>
+  {{/if}}
+</section>

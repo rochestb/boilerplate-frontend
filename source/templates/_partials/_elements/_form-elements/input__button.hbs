@@ -1,7 +1,11 @@
-{{debug this}}
+{{!
+  @name input__button
+  @param type
+  @param class
+  @param value
+  @example {{>input__button context}}
+}}
 <button
-  class="{{default class ""}}"
-  {{#is this.isSubmit true}}
-    type="submit"
-  {{/is}}
+  class="{{default this.class "btn"}}"
+  type="{{default this.type "submit"}}"
   >{{this.value}}</button>

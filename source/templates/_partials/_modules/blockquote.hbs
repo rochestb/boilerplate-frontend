@@ -1,0 +1,30 @@
+{{!
+  @name blockquote
+  @param class
+  @param paragraphs
+  @param cite
+  @param cite.url
+  @param cite.name
+  @example {{>blockquote context}}
+}}
+<blockquote class="{{this.class}}">
+  {{#each this.paragraphs}}
+    <p>{{this}}</p>
+  {{/each}}
+
+  {{#if this.cite}}
+    <footer>
+      —
+      <cite>
+        {{#if this.cite.url}}
+          <a href="{{this.cite.url}}" target="_blank">
+        {{/if}}
+        {{this.cite.name}}
+        {{#if this.cite.url}}
+          </a>
+        {{/if}}
+      </cite>
+    
+    </footer>
+  {{/if}}
+</blockquote>

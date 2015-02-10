@@ -92,5 +92,53 @@
       }
     ],
     "selected": "mr"
+  },
+  "blockquote": {
+    "paragraphs": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in libero vehicula, fringilla erat ut, euismod est. Fusce sodales ex nulla, vel fermentum quam egestas rhoncus. Nunc eros massa, ultricies tempor nulla et, lacinia scelerisque tortor. Nam sagittis, arcu nec posuere rhoncus, eros ex imperdiet nunc, eget ultrices neque massa non lorem. Maecenas luctus pellentesque congue. Nullam id feugiat sem. Suspendisse condimentum sollicitudin tellus, sed scelerisque arcu malesuada et.",
+      "Suspendisse vel ex vestibulum, aliquet lectus eu, ultricies lectus. Sed aliquam laoreet odio sed convallis. Nunc ac blandit ante."
+    ],
+    "cite": {
+      "url": "fake.html",
+      "name": "benjamin sterling"
+    }
+  },
+  "login": {
+    "heading": "Login to Site",
+    "username": {
+      "containerClass": "field-container",
+      "label": "Username or Email",
+      "input": {
+        "name": "username",
+        "id": "username",
+        "placeholder": "Username or Email"
+      }
+    },
+    "password": {
+      "containerClass": "field-container",
+      "label": "Password",
+      "input": {
+        "type": "password",
+        "name": "password",
+        "id": "password",
+        "placeholder": "Password"
+      }
+    },
+    "showForgotPassword": true,
+    "button": {
+      "value": "Login"
+    }
+  },
+  "nav": {
+    "class": "nav-primary",
+    "heading": "Primary Navigation",
+    "links": [
+      {
+        "href": "#",
+        "text": "link one",
+        "class": "someclass",
+        "target": "_blank"
+      }
+    ]
   }
 }
