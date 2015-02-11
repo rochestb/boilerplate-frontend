@@ -16,6 +16,7 @@ module.exports = function(grunt) {
         src: [
           config.js + '/**/*.js',
           '!' + config.js + '/libs/**/*.js',
+          '!' + config.js + '/lodash.js',
           '!' + config.js + '/jquery.js'
         ]
       },

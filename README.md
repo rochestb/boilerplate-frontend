@@ -72,6 +72,7 @@ All `:dev` grunt tasks are for local development and all `:dist` are used for di
 * `grunt imagemin:dist` - Minifies gif, jpeg, jpg, and png from `source` and saves to `dist`
 * `grunt jscs` - Checks all JavaScript to ensure it all matches standards set in the `.jscs.json` file
 * `grunt jshint` - Checks all JavaScript to ensure code quality
+* `grunt lodash` - Builds a custom lodash file based on 
 * `grunt modernizr` - Builds out a lean version of Modernizr based on the settings found in `Gruntconfig.js`
   * `grunt modernizr:dev` - Compiles modernizr based on the `Gruntconfig.js`
   * `grunt modernizr:dist` - Compiles modernizr based on the `Gruntconfig.js` but uglified
