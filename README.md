@@ -49,6 +49,8 @@ This approach will limit the Modernizr tests to only those needed for the projec
 ## Grunt Tasks
 All `:dev` grunt tasks are for local development and all `:dist` are used for distribution builds.
 
+* `grunt serve` -  Will set up everything for local development including live reload
+* `grunt dist` - Will compile the entired codebase for dev, stg, prod, or deliverable
 * `grunt bowercopy` - Moves files installed via `bower install` to their correct locations
   * `grunt bowercopy:dev`
   * `grunt bowercopy:dist`
