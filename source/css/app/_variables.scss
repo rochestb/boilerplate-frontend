@@ -26,14 +26,15 @@ $vertical-rhythm: 24;      // 24px vertical rhythm
 
 $font-size-base: 1em; // Use browser default font-size, usually 16px
 
-// font sizes defined in _mixins.scss
-// $font-size-1
-// $font-size-2
-// $font-size-3
-// $font-size-4
-// $font-size-5
-// $font-size-6
-// $font-size-7
+// Font Size Variables
+//   Dependant on get-multiplier()
+$font-size-1: get-multiplier(50, $font-size-base) + 0em; // 50px
+$font-size-2: get-multiplier(32, $font-size-base) + 0em; // 32px
+$font-size-3: get-multiplier(22, $font-size-base) + 0em; // 22px
+$font-size-4: get-multiplier(18, $font-size-base) + 0em; // 18px
+$font-size-5: $font-size-base;                           // 16px
+$font-size-6: get-multiplier(14, $font-size-base) + 0em; // 14px
+$font-size-7: get-multiplier(11, $font-size-base) + 0em; // 11px
 
 
 // Spacing

@@ -20,7 +20,9 @@ module.exports = function(grunt) {
         config.css + '/app'
       ],
       debugInfo: true,
-      force: true
+      force: true,
+      require: 'sass-globbing',
+      sourcemap: true
     },
 
     dev: {},
