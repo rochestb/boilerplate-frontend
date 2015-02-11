@@ -17,11 +17,17 @@ module.exports = function() {
   config.images = config.root + '/images';
 
   config.dist = 'dist';
-  config.distCSS = config.dist + '/styles';
+  config.distCSS = config.dist + '/css';
   config.distJS = config.dist + '/js';
   config.distImages = config.dist + '/images';
 
   config.tmp = '.tmp';
+
+  config.jquery = {
+    version: '1.11.1',
+    exclude: 'ajax,effects',
+    dest: config.js + '/jquery.js'
+  };
 
   config.modernizr = {
     // https://github.com/Modernizr/modernizr.com/blob/gh-pages/i/js/modulizr.js#L15-157
