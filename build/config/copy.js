@@ -30,7 +30,8 @@ module.exports = function(grunt) {
             'robots.txt',
             'favicon.ico',
             'css/fonts/**/*',
-            '/js/lodash.js'
+            '/js/lodash.js',
+            '/js/jquery.js'
           ],
           dest: config.dist
         }

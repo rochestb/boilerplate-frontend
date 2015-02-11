@@ -22,7 +22,8 @@ module.exports = function(grunt) {
         'build/config/**/*.js', // Grunt config files
         config.js + '/**/*.js',
         '!' + config.js + '/libs/**/*.js',
-        '!' + config.js + '/lodash.js'
+        '!' + config.js + '/lodash.js',
+        '!' + config.js + '/jquery.js'
       ]
     }
   };
