@@ -22,6 +22,12 @@ module.exports = function() {
   config.distJS = config.dist + '/js';
   config.distImages = config.dist + '/images';
 
+  config.jquery = {
+    version: '1.11.1',
+    exclude: 'ajax,effects',
+    dest: config.js + '/jquery.js'
+  };
+
   config.modernizr = {
     // https://github.com/Modernizr/modernizr.com/blob/gh-pages/i/js/modulizr.js#L15-157
     tests: [

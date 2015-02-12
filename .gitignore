@@ -24,3 +24,5 @@ bower_components
 
 .tmp
 dist/
+source/js/lodash.js
+source/js/jquery.js

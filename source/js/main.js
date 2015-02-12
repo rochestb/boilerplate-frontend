@@ -13,7 +13,7 @@ require.config({
   paths: {
     // Core Libraries
     jquery: 'libs/jquery/jquery',
-    lodash: 'libs/lodash/lodash',
+    lodash: 'lodash',
 
     // Helper Modules
     helpers: 'apps/helpers'
