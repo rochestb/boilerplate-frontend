@@ -18,7 +18,6 @@ module.exports = function(grunt) {
         destPrefix: jslibs
       },
       files: {
-        'jquery': 'jquery/dist/jquery.js',
         'requirejs': 'requirejs/require.js'
       }
     },
