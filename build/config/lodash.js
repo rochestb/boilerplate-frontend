@@ -22,6 +22,9 @@ module.exports = function(grunt) {
           'collection',
           'array',
           'function'
+        ],
+        'shortFlags': [
+          '-d'
         ]
       }
     }
