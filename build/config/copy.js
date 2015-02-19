@@ -31,7 +31,8 @@ module.exports = function(grunt) {
             'favicon.ico',
             'css/fonts/**/*',
             '/js/lodash.js',
-            '/js/jquery.js'
+            '/js/jquery.js',
+            'browserconfig.xml'
           ],
           dest: config.dist
         }
