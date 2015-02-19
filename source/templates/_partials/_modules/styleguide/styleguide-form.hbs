@@ -1,0 +1,152 @@
+<section>
+  <fieldset>
+    <h1>Form Elements</h1>
+
+    <h2>Text Fields</h2>
+    {{>input__text-label-sibling styleguide.form.text__input}}
+
+    <div class="field-container">
+      {{label "password" "Password Input"}}
+      {{>input__text styleguide.form.text__password}}
+    </div>
+
+    <div class="field-container">
+      {{label "webaddress" "Web Address"}}
+      {{>input__text styleguide.form.text__webaddress}}
+    </div>
+
+    <div class="field-container">
+      {{label "emailaddress" "Email Address"}}
+      {{>input__text styleguide.form.text__email}}
+    </div>
+
+    <div class="field-container">
+      {{label "search" "Search"}}
+      {{>input__text styleguide.form.text__search}}
+    </div>
+
+    <div class="field-container">
+      {{label "number" "Number Input"}}
+      {{>input__text styleguide.form.text__number}}
+    </div>
+
+    <div class="field-container">
+      {{label "textarea" "Textarea"}}
+      {{>input__textarea styleguide.form.text__area}}
+    </div>
+
+    <div class="field-container">
+      {{label "errortext" "Error Input"}}
+      {{>input__text styleguide.form.text__error}}
+    </div>
+
+    <div class="field-container">
+      {{label "validtext" "Valid Input"}}
+      {{>input__text styleguide.form.text__valid}}
+    </div>
+
+    <h2>Select Menu</h2>
+
+    <div class="field-container">
+      {{label "title" "Select"}}
+      {{select
+        "title"
+        styleguide.selectmenu.titles
+        styleguide.selectmenu.selected}}
+    </div>
+
+    <h2>Checkbox</h2>
+    <fieldset>
+      <legend>Group of Checkboxes</legend>
+      {{#label "checkbox1"}}
+        {{checkbox 
+          "checkbox"
+          "yes"
+          true
+          id="checkbox1"}}
+        Checkbox One
+      {{/label}}
+
+      {{#label "checkbox2"}}
+        {{checkbox 
+          "checkbox"
+          "yes"
+          false
+          id="checkbox2"}}
+        Checkbox Two
+      {{/label}}
+
+      {{#label "checkbox3"}}
+        {{checkbox 
+          "checkbox"
+          "yes"
+          false
+          id="checkbox3"}}
+        Checkbox Three
+      {{/label}}
+    </fieldset>
+
+    <h2>Radio buttons</h2>
+    <fieldset>
+      <legend>Group of Radio buttons</legend>
+      {{#label "radio1"}}
+        {{checkbox 
+          "radio"
+          "yes"
+          true
+          type="radio"
+          id="radio1"}}
+        Radio One
+      {{/label}}
+
+      {{#label "radio2"}}
+        {{checkbox 
+          "radio"
+          "yes"
+          false
+          type="radio"
+          id="radio2"}}
+        Radio Two
+      {{/label}}
+
+      {{#label "radio3"}}
+        {{checkbox 
+          "radio"
+          "yes"
+          false
+          type="radio"
+          id="radio3"}}
+        Radio Three
+      {{/label}}
+    </fieldset>
+  </fieldset>
+</section>
+
+<section>
+  <h1>Buttons</h1>
+
+  <h2>Primary Button</h2>
+  {{button
+    "save"
+    "Primary Button"
+    class="btn-primary"}}
+
+  {{button
+    "save"
+    "Primary Button Disabled"
+    class="btn-primary is-disabled"
+    disabled="disabled"}}
+
+  <h2>Secondary Button</h2>
+  {{button
+    "save"
+    "Secondary Button"
+    class="btn-secondary"}}
+
+  {{button
+    "save"
+    "Secondary Button Disabled"
+    class="btn-secondary is-disabled"
+    disabled="disabled"}}
+
+</section>

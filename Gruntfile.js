@@ -38,6 +38,7 @@ module.exports = function(grunt) {
       'lodash',
       'modernizr:dev',
       'stripmq:dev',
+      'assemble:dev',
       'connect:dev',
       'watch'
     ]);
@@ -48,6 +49,7 @@ module.exports = function(grunt) {
     'jquery',
     'bowercopy:dev',
     'compass:dist',
+    'assemble:dist',
     'concurrent:dist',
     'lodash',
     'copy:dist',

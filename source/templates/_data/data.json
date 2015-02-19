@@ -1,0 +1,23 @@
+{
+  "title": "CP+B Boilerplate",
+  "description" : "CP+B Boilerplate description",
+  "keywords": "CP+B Boilerplate keywords",
+  "hoopla": {
+    "tag": "section",
+    "heading": "Hoopla",
+    "image_src": "http://dummyimage.com/200x400/000/fff",
+    "image_award": "http://dummyimage.com/200x200/000/fff",
+    "image_url": "http://dummyimage.com/100x100/000/fff",
+    "body": "See the quick brown fox jump over the lazy dog!",
+    "attr": {
+      "id": "someid",
+      "data-small": "small",
+      "data-medium": "medium"
+    },
+    "link":{
+      "href": "tmp.html",
+      "text": "Click me"
+    },
+    "percentage": "20"
+  }
+}

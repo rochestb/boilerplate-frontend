@@ -1,0 +1,23 @@
+{{!
+  @name nav
+  @param class
+  @param links
+  @param links[].href
+  @param links[].text
+  @param heading
+  @param headingClass
+  @example {{>nav context}}
+}}
+<nav class="{{this.class}}" role="navigation">
+  <h1
+    class="{{default this.headingClass "visuallyhidden"}}"
+    >{{this.heading}}</h1>
+
+  <ul>
+    {{#each links}}
+      <li>
+        {{link this}}
+      </li>
+    {{/each}}
+  </ul>
+</nav>

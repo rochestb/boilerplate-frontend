@@ -1,0 +1,30 @@
+{{!
+  This is an example module
+}}
+<section
+  class="bgfill module-hoopla"
+  {{>attr this.attr}}>
+
+  <h1>{{this.heading}}</h1>
+
+  <div class="hoopla__infographic">
+    <img alt="hoopla"
+      class="hoopla__graphic"
+      src="{{this.image_award}}" />
+
+    <p class="text-color--is-white hoopla__percent"
+      id="percent"
+      data-percentage="{{this.percentage}}">
+        {{this.percentage}}<sup>&#37;</sup></p>
+
+    <img class="hoopla__client-logo"
+      src="{{this.image_url}}" alt="" />
+        
+  </div>
+
+  <div class="hoopla__copy">
+    <img alt="Hoopla Countdown" src="{{this.image_src }}">
+    <p class="text-color--is-white">{{this.body}}</p>
+    {{link this.link}}
+  </div>
+</section>

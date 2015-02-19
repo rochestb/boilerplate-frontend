@@ -1,0 +1,59 @@
+{{!
+  @name input__textarea
+  @param autocapitalize
+  @param autocomplete
+  @param autofocus
+  @param class
+  @param cols
+  @param disabled
+  @param maxlength
+  @param minlength
+  @param name
+  @param id
+  @param placeholder
+  @param readonly
+  @param required
+  @param rows
+  @param value
+  @example {{>input__input context}}
+}}
+<textarea
+  autocapitalize="{{default this.autocapitalize "sentences"}}"
+  autocomplete="{{default this.autocomplete "on"}}"
+  {{#if this.autofocus}}
+    autofocus="on"
+  {{/if}}
+  {{#if this.class}}
+    class="{{this.class}}"
+  {{/if}}
+  {{#if this.cols}}
+    cols="{{this.cols}}"
+  {{/if}}
+  {{#if this.disabled}}
+    disabled="{{this.disabled}}"
+  {{/if}}
+  {{#if this.maxlength}}
+    maxlength="{{this.maxlength}}"
+  {{/if}}
+  {{#if this.minlength}}
+    minlength="{{this.minlength}}"
+  {{/if}}
+  {{#if this.name}}
+    name="{{this.name}}"
+  {{/if}}
+  {{#if this.id}}
+    id="{{this.id}}"
+  {{/if}}
+  {{#if this.placeholder}}
+    placeholder="{{this.placeholder}}"
+  {{/if}}
+  {{#if this.readonly}}
+    readonly="{{this.readonly}}"
+  {{/if}}
+  {{#if this.required}}
+    required="{{this.required}}"
+  {{/if}}
+  {{#if this.rows}}
+    rows="{{this.rows}}"
+  {{/if}}
+  >{{#if this.value}}{{this.value}}{{/if}}</textarea>

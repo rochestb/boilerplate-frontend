@@ -1,0 +1,46 @@
+{{!
+  @name input__input
+  @param type
+  @param class
+  @param name
+  @param id
+  @param placeholder
+  @param value
+  @param autocomplete
+  @param checked
+  @param disabled
+  @param maxlength
+  @param readonly
+  @example {{>input__input context}}
+}}
+<input
+  type="{{default this.type "text"}}"
+  class="{{default this.class ""}}"
+  {{#if this.name}}
+    name="{{this.name}}"
+  {{/if}}
+  {{#if this.id}}
+    id="{{this.id}}"
+  {{/if}}
+  {{#if this.placeholder}}
+    placeholder="{{this.placeholder}}"
+  {{/if}}
+  {{#if this.value}}
+    value="{{this.value}}"
+  {{/if}}
+  {{#if this.autocomplete}}
+    autocomplete="{{this.autocomplete}}"
+  {{/if}}
+  {{#if this.checked}}
+    checked="{{this.checked}}"
+  {{/if}}
+  {{#if this.disabled}}
+    disabled="{{this.disabled}}"
+  {{/if}}
+  {{#if this.maxlength}}
+    maxlength="{{this.maxlength}}"
+  {{/if}}
+  {{#if this.readonly}}
+    readonly="{{this.readonly}}"
+  {{/if}}
+  />

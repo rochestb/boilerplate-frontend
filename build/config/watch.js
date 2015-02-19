@@ -46,6 +46,15 @@ module.exports = function(grunt) {
         'compass:dev',
         'stripmq:dev'
       ]
+    },
+
+    assemble: {
+      files: [
+        config.tmpl + '/**/*'
+      ],
+      tasks: [
+        'assemble:dev'
+      ]
     }
   };
 };
