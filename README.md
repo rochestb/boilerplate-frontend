@@ -47,6 +47,10 @@ Boilerplate has a custom builder of Modernizr that will allow you to add your ow
 
 This approach will limit the Modernizr tests to only those needed for the project. As a benefit we prevent running every Modernizr test on every page load of the site.
 
+### BrowserSync
+
+[BroswerSync.io](http://www.browsersync.io/) is included as a grunt task to serve up the site, update it when changes are made, and assist in testing. It includes an additional UI with different toggles for testing. The URL for the UI is printed with the development URL when grunt serve is initially run.
+
 ## Grunt Tasks
 All `:dev` grunt tasks are for local development and all `:dist` are used for distribution builds.
 
@@ -55,6 +59,7 @@ All `:dev` grunt tasks are for local development and all `:dist` are used for di
 * `grunt bowercopy` - Moves files installed via `bower install` to their correct locations
   * `grunt bowercopy:dev`
   * `grunt bowercopy:dist`
+* `grunt browserSync:dev` - Serves up static files and displays local and external address
 * `grunt clean` - Cleans up the `.tmp` and `dist` folders
   * `grunt clean:dev`
   * `grunt clean:dist`
@@ -65,7 +70,6 @@ All `:dev` grunt tasks are for local development and all `:dist` are used for di
 * `grunt concurrent` - Runs multiple grunt tasks at the same time to speed up builds
   * `grunt concurrent:dev` - Fires off nothing atm
   * `grunt concurrent:dist` - Fires off `imagemin:dist`, `svgmin:dist`, `cssmin:dist`, `htmlmin:dist`
-* `grunt connect:dev` - Sets up a local server
 * `grunt copy` - Copies all needed files to correct locations
   * `grunt copy:dev`
   * `grunt copy:dist` - copies over `robots.txt` and `favicon.ico` to the `dist` folder
