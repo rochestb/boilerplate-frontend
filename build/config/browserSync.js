@@ -11,20 +11,24 @@ module.exports = function(grunt) {
 
   // Config
   return {
-
     dev: {
       files: {
-        src: '.tmp/*',
+        src: [
+          '.tmp/**',
+          config.js + '/**'
+        ]
       },
-
       options: {
-        watchTask: true,
         server: {
-          baseDir: '.tmp/'
-        }
+          baseDir: '.tmp/',
+          routes: {
+            '/bower_components': 'bower_components',
+            '/js': 'source/js'
+          }
+        },
+        watchTask: true
       }
     },
-
     test: {
     }
   };
