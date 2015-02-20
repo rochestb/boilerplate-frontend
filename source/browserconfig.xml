@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+   <msapplication>
+   	<tile>
+   		<TileImage src="images/touch/ms-touch-icon-144x144-precomposed.png" />
+   		<TileColor>#3372DF</TileColor>
+   	</tile>
+   </msapplication>
+</browserconfig>

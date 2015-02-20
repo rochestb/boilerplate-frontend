@@ -39,6 +39,7 @@ A few quick reminders as you are developing.
 * Boilerplate contains Lodash and not Underscore or Lodash version of Underscore, so all [Lodash methods](http://lodash.com/docs) are available when required.
 * [Accessibility checklist](http://a11yproject.com/checklist.html).
 * [HTML5 Elements](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list) on MDN
+* [Custom Tiles in IE11](https://msdn.microsoft.com/en-us/library/ie/dn455106%28v=vs.85%29.aspx) on MSDN, covers the use of browserconfig.xml in customizing the display of a pinned site in IE11/Win8+
 
 ### Modernizr
 
@@ -88,3 +89,4 @@ All `:dev` grunt tasks are for local development and all `:dist` are used for di
 
 ### License
 [GNU General Public License Version 3](http://www.gnu.org/licenses/gpl.html)
+
