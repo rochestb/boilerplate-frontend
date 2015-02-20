@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask(
     'serve',
-    function(target) {
+    function() {
 
     grunt.task.run([
       'clean:dev',
