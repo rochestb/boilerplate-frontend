@@ -39,7 +39,7 @@ module.exports = function(grunt) {
       'modernizr:dev',
       'stripmq:dev',
       'assemble:dev',
-      'connect:dev',
+      'browserSync:dev',
       'watch'
     ]);
   });
