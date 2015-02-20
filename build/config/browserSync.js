@@ -19,6 +19,7 @@ module.exports = function(grunt) {
         ]
       },
       options: {
+        open: true,
         server: {
           baseDir: '.tmp/',
           routes: {
@@ -27,6 +28,17 @@ module.exports = function(grunt) {
           }
         },
         watchTask: true
+      }
+    },
+    dist: {
+      files: {
+        src: 'dist/**',
+      },
+      options: {
+        open: false,
+        server: {
+          baseDir: 'dist/'
+        }
       }
     },
     test: {
