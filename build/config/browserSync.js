@@ -24,7 +24,8 @@ module.exports = function(grunt) {
           baseDir: '.tmp/',
           routes: {
             '/bower_components': 'bower_components',
-            '/js': 'source/js'
+            '/js': 'source/js',
+            '/images': 'source/images'
           }
         },
         watchTask: true
