@@ -19,6 +19,7 @@ This set up is for static sites and not initailly set up to handle dynamic sites
 * [bundler](http://bundler.io/)
 * [sass](http://sass-lang.com/)
 * [compass](compass-style.org)
+* [sass-globbing](https://github.com/chriseppstein/sass-globbing)
 * [node.js](http://nodejs.org/)
 * [grunt](http://gruntjs.com)
 
