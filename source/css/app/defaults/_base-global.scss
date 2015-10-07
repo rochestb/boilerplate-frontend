@@ -1,5 +1,4 @@
 // 00.global.scss
-@import 'compass/css3/selection';
 
 /********************************************************** Viewport */
 
@@ -33,8 +32,6 @@ html {
 
 html,
 body {
-  @include selection($black, $white);
-  background: $white;
   height: 100%;
   margin: 0;
   padding: 0;

@@ -15,10 +15,6 @@ This set up is for static sites and not initailly set up to handle dynamic sites
 [ADD SHORT DISCRIPTION OF PROJECT]
 
 ## Requirements
-* [ruby](https://www.ruby-lang.org/en/)
-* [bundler](http://bundler.io/)
-* [sass](http://sass-lang.com/)
-* [compass](compass-style.org)
 * [node.js](http://nodejs.org/)
 * [grunt](http://gruntjs.com)
 
@@ -63,9 +59,9 @@ All `:dev` grunt tasks are for local development and all `:dist` are used for di
 * `grunt clean` - Cleans up the `.tmp` and `dist` folders
   * `grunt clean:dev`
   * `grunt clean:dist`
-* `grunt compass` - Compiles Sass files tp `.tmp/cssgen`.  Sets import path to include `bower_components`
-  * `grunt compass:dev`
-  * `grunt compass:dist`
+* `grunt sass` - Compiles Sass files tp `.tmp/css`.  Sets import path to include `bower_components`
+  * `grunt sass:dev`
+  * `grunt sass:dist`
 * `grunt concat`*
 * `grunt concurrent` - Runs multiple grunt tasks at the same time to speed up builds
   * `grunt concurrent:dev` - Fires off nothing atm
