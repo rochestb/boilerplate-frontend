@@ -15,7 +15,7 @@ define(function() {
       .getPropertyValue('content')
       // Remove quotes
       // IE11 and below return the string "s" instead of just s
-      .replace(/\"/g,'');
+      .replace(/\"|\'/g,'');
     }
     // Always return 'm' as IE8 is using stripmq for the IE8+below css
     else {
