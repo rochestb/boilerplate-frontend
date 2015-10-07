@@ -26,3 +26,5 @@ bower_components
 dist/
 source/js/lodash.js
 source/js/jquery.js
+
+*Map.scss

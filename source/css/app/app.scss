@@ -3,29 +3,29 @@
 @import 'extra-strength-responsive-grids/css/_grid.generator';
 
 // Your mixins & functions
-@import 'functions/**/*';
-@import 'mixins/**/*';
+@import 'functionsMap';
+@import 'mixinsMap';
 
 // Global config variables: colors, font stacks, etc
 @import 'variables';
 
 // @font-face webfonts
-@import 'fonts/**/*';
+@import 'fontsMap';
 
 // @keyframe animations
-@import 'animations/**/*';
+@import 'animationsMap';
 
 // normalize.css
 @import 'normalize-scss/_normalize';
 
 // Our own base styles
-@import 'defaults/**/*';
+@import 'defaultsMap';
 
 // Modules
 // ------------------------------------------------
-@import 'modules/**/*';
+@import 'modulesMap';
 
-@import 'utilities/**/*';
+@import 'utilitiesMap';
 
 // SHAME!!!!
 @import 'shame';

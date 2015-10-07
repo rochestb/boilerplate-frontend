@@ -43,7 +43,8 @@ module.exports = function(grunt) {
        config.css + '/**/*'
      ],
       tasks: [
-        'compass:dev',
+        'sass_globbing:dev',
+        'sass:dev',
         'stripmq:dev'
       ]
     },

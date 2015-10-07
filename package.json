@@ -4,6 +4,9 @@
   "scripts": {
     "postinstall": "node npm-postinstall.js"
   },
+  "config": {
+    "unsafe-perm": true
+  },
   "dependencies": {},
   "devDependencies": {
     "assemble": "^0.4.42",
@@ -30,6 +33,7 @@
     "grunt-modernizr": "^0.5.2",
     "grunt-newer": "^0.7.0",
     "grunt-sass": "^0.17.0",
+    "grunt-sass-globbing": "^1.4.0",
     "grunt-scss-lint": "^0.3.3",
     "grunt-string-replace": "^1.0.0",
     "grunt-stripmq": "0.0.6",
